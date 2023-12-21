@@ -65,9 +65,9 @@ botao_soma = Button(root, text="+", padx=19, pady=55, font=5, bg=cor_botao, fg=c
 botao_sub = Button(root, text="-", padx=21, pady=20, font=5, bg=cor_botao, fg=cor_letra, command=lambda: tipo_operador("-"))
 botao_mul = Button(root, text="x", padx=21, pady=20, font=2, bg=cor_botao, fg=cor_letra, command=lambda: tipo_operador("*"))
 botao_div = Button(root, text="/", padx=22, pady=20, font=5, bg=cor_botao, fg=cor_letra, command=lambda: tipo_operador("/"))
-botao_del = Button(root, text="AC", padx=14, pady=20, font=2, bg=cor_botao, fg=cor_letra, command=botao_limpar_tudo)
+botao_ac = Button(root, text="AC", padx=14, pady=20, font=2, bg=cor_botao, fg=cor_letra, command=botao_limpar_tudo)
 botao_igual = Button(root, text="=", padx=19, pady=55, font=5, bg=cor_botao, fg=cor_letra, command=calcular_valor)
-botao_ponto = Button(root, text="C", padx=19, pady=20, font=10, bg=cor_botao, fg=cor_letra, command=botao_limpar_ultimo_caracter)
+botao_c = Button(root, text="C", padx=19, pady=20, font=10, bg=cor_botao, fg=cor_letra, command=botao_limpar_ultimo_caracter)
 
 botao_1.grid(row=4, column=0)
 botao_2.grid(row=4, column=1)
@@ -81,7 +81,7 @@ botao_7.grid(row=2, column=0)
 botao_8.grid(row=2, column=1)
 botao_9.grid(row=2, column=2)
 
-botao_del.grid(row=1, column=0)
+botao_ac.grid(row=1, column=0)
 botao_div.grid(row=1, column=1)
 botao_mul.grid(row=1, column=2)
 botao_sub.grid(row=1, column=3)
@@ -90,6 +90,6 @@ botao_soma.grid(row=2, column=3, rowspan=2)
 botao_igual.grid(row=4, column=3, rowspan=2)
 
 botao_0.grid(row=5, column=0, columnspan=2)
-botao_ponto.grid(row=5, column=2)
+botao_c.grid(row=5, column=2)
 
 root.mainloop()
