@@ -50,41 +50,6 @@ def tipo_operador(simbolo):
         e.delete(0, END)
     except:
         e.delete(0, END)
-
-
-'''
-def calc_adicao():
-    primeiro_numero = e.get()
-    global p_num
-    global math 
-    math = "+" 
-    p_num = int(primeiro_numero)
-    e.delete(0, END)
-
-def calc_sub():
-    primeiro_numero = e.get()
-    global p_num
-    global math 
-    math = "-" 
-    p_num = int(primeiro_numero)
-    e.delete(0, END)
-
-def calc_mul():
-    primeiro_numero = e.get()
-    global p_num
-    global math 
-    math = "*" 
-    p_num = int(primeiro_numero)
-    e.delete(0, END)
-
-def calc_div():
-    primeiro_numero = e.get()
-    global p_num
-    global math 
-    math = "/" 
-    p_num = int(primeiro_numero)
-    e.delete(0, END)
-'''
     
 botao_1 = Button(root, text="1", padx=20, pady=20, font=5, bg=cor_botao, fg=cor_letra, command=lambda: botao_clicar('1'))
 botao_2 = Button(root, text="2", padx=20, pady=20, font=5, bg=cor_botao, fg=cor_letra, command=lambda: botao_clicar('2'))
